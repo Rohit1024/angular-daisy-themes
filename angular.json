@@ -95,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-daisy-themes:build:production"
+              "buildTarget": "angular-daisy-themes:build:production"
             },
             "development": {
-              "browserTarget": "angular-daisy-themes:build:development"
+              "buildTarget": "angular-daisy-themes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-daisy-themes:build"
+            "buildTarget": "angular-daisy-themes:build"
           }
         },
         "test": {
