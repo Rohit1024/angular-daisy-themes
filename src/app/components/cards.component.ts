@@ -6,7 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="grid grid-cols-3 gap-4 m-4 place-items-center">
+    <div
+      class="grid lg:grid-cols-3 gap-4 m-4 place-items-center sm:grid-cols-1 md:grid-cols-2"
+    >
       @for (card of totalCards; track card; let index = $index) {
       <div class="card w-full bg-base-100 shadow-xl">
         <figure class="px-10 pt-10">
